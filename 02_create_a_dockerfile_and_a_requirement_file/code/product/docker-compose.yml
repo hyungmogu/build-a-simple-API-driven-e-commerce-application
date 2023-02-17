@@ -2,9 +2,9 @@ version: '3'
 
 services:
   product-service:
-    build: ./product
+    build: .
     volumes:
-      -  ./product:/usr/src/app
+      -  ./:/usr/src/app
     ports:
       - 5001:80
 
