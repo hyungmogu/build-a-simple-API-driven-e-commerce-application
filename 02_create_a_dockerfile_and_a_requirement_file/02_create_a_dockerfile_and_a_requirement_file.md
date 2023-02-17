@@ -12,4 +12,16 @@ services:
       -  ./product:/usr/src/app
 ```
 
-2. 
+2. port `80` is the default port used to establish communication with local browser
+
+```
+version: '3'
+
+services:
+  product-service:
+    build: .
+    volumes:
+      -  ./:/usr/src/app
+    ports:
+      - 5001:80
+```
